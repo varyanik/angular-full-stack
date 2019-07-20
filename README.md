@@ -80,15 +80,15 @@ ng g component todos --project=ui
 
 ## Ng commands
 
-| Command | Description |
-| ------- | ----------- |
-| `ng serve <ui/api>` | Run a dev server (for ui at http://localhost:4200/). The app will automatically reload if you change any of the source files. |
-| `ng build <ui/api>` | Build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. |
-| `ng test <ui/api>` | Execute the unit tests via [Jest](https://jestjs.io). |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| ----------------------- | ----------- |
+| `ng serve <ui/api>`     | Run a dev server (for ui at http://localhost:4200/). The app will automatically reload if you change any of the source files. |
+| `ng build <ui/api>`     | Build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. |
+| `ng test <ui/api>`      | Execute the unit tests via [Jest](https://jestjs.io). |
 | `npm run affected:test` | Execute the unit tests affected by a change. |
-| `ng e2e <ui/api>` | Execute the end-to-end tests via [Cypress](https://www.cypress.io). |
-| `npm run affected:e2e` | Execute the end-to-end tests affected by a change. |
-| `npm run dep-graph` | Show a diagram of the dependencies of your projects. |
+| `ng e2e <ui/api>`       | Execute the end-to-end tests via [Cypress](https://www.cypress.io). |
+| `npm run affected:e2e`  | Execute the end-to-end tests affected by a change. |
+| `npm run dep-graph`     | Show a diagram of the dependencies of your projects. |
 
 ## Licence
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?color=blue&style=flat-square)](http://opensource.org/licenses/MIT)
