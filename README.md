@@ -1,6 +1,6 @@
 # Angular Full Stack
 
-This project was generated using [Nx](https://nx.dev).
+> This project was generated using [Nx](https://nx.dev).
 
 ## Quick Start
 
@@ -82,11 +82,11 @@ ng g component todos --project=ui
 
 | Command | Description |
 | ------- | ----------- |
-| `ng serve <ui|api>` | Run a dev server (for ui at http://localhost:4200/). The app will automatically reload if you change any of the source files. |
-| `ng build <ui|api>` | Build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. |
-| `ng test <ui|api>` | Execute the unit tests via [Jest](https://jestjs.io). |
+| `ng serve <ui/api>` | Run a dev server (for ui at http://localhost:4200/). The app will automatically reload if you change any of the source files. |
+| `ng build <ui/api>` | Build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. |
+| `ng test <ui/api>` | Execute the unit tests via [Jest](https://jestjs.io). |
 | `npm run affected:test` | Execute the unit tests affected by a change. |
-| `ng e2e <ui|api>` | Execute the end-to-end tests via [Cypress](https://www.cypress.io). |
+| `ng e2e <ui/api>` | Execute the end-to-end tests via [Cypress](https://www.cypress.io). |
 | `npm run affected:e2e` | Execute the end-to-end tests affected by a change. |
 | `npm run dep-graph` | Show a diagram of the dependencies of your projects. |
 
