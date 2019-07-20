@@ -25,7 +25,7 @@ cd angular-full-stack
 
 ### 2. Create NX workspace yourself
 
-#### 1) Let's create an empty workspace for later filling.
+#### 1) Let's create an empty workspace for later filling
 
 ```bash
 npx create-nx-workspace@latest app --style=sass --preset=empty --skip-install
@@ -48,11 +48,15 @@ ng add @nrwl/node
 </pre>
 </details>
 
-## Upgrade node packages and show dependencies diagram
+### Upgrade node packages
 
 ```bash
 npm-check --update-all --ignore=typescript
+```
 
+### Show dependencies diagram
+
+```bash
 npm run dep-graph
 ```
 
