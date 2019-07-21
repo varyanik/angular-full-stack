@@ -82,6 +82,9 @@ ng generate @nestjs/schematics:controller todos --sourceRoot=apps/api/src --path
 ng g component todos --project=ui
 ```
 
+## Compare branches
+`https://github.com/varyanik/angular-full-stack/compare/nx-full-stack-preset...nx-step-by-step`
+
 ## Ng commands
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
