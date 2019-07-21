@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@nrwl/workspace:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "apps/ui",
@@ -23,7 +23,7 @@
             "polyfills": "apps/ui/src/polyfills.ts",
             "tsConfig": "apps/ui/tsconfig.app.json",
             "assets": ["apps/ui/src/favicon.ico", "apps/ui/src/assets"],
-            "styles": ["apps/ui/src/styles.sass"],
+            "styles": ["apps/ui/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -176,7 +176,6 @@
       "root": "libs/api-interface",
       "sourceRoot": "libs/api-interface/src",
       "projectType": "library",
-      "schematics": {},
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -194,6 +193,11 @@
             "jestConfig": "libs/api-interface/jest.config.js",
             "tsConfig": "libs/api-interface/tsconfig.spec.json"
           }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
         }
       }
     }
