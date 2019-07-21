@@ -1,5 +1,5 @@
 {
-  "npmScope": "ui",
+  "npmScope": "app",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
