@@ -89,8 +89,8 @@ ng g component todos --project=ui
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 | --- | --- |
-| `ng serve <api/ui>`         | Run a dev server (for ui at http://localhost:4200/). The app will automatically reload if you change any of the source files |
-| `ng build <api/ui/workers>` | Build the project to the `dist/` directory. Use the `--prod` flag for a production build |
+| `ng serve <api/ui>`         | Run a dev server for the app. By default, URLs are http://localhost:4200/ for ui and http://localhost:3333/ for api. |
+| `ng build <api/ui/workers>` | Build the app to the `dist/` directory. Use the `--prod` flag for a production build |
 | `ng test <api/ui/workers>`  | Execute the unit tests for the project via [Jest](https://jestjs.io) |
 | `ng e2e <ui-e2e>`           | Execute the end-to-end tests via [Cypress](https://www.cypress.io) |
 | `ng lint <api/ui/workers>`  | Lint the project |
@@ -99,7 +99,7 @@ ng g component todos --project=ui
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 | --- | --- |
-| `npm run serve`            | Run dev server with default apps and open a new tab in a browser at http://localhost:4200/ |
+| `npm run serve`            | Run dev server with default apps and open in a browser at http://localhost:4200/ |
 | `npm run build`            | Build all apps to the `dist/` directory. Use the `-- --prod` flag for a production build |
 | `npm run test`             | Execute the unit tests |
 | `npm run lint`             | Lint all projects |
