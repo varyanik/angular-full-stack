@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@app/api-interface';
+import { Message } from '@libs/api-interface';
 
 @Component({
   selector: 'app-root',
