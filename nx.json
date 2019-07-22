@@ -17,6 +17,9 @@
     "api": {
       "tags": []
     },
+    "workers": {
+      "tags": []
+    },
     "api-interface": {
       "tags": []
     }
