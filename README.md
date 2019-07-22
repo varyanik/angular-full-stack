@@ -12,7 +12,7 @@ These capabilities include generating applications, libraries, .etc as well as t
 
 ### Pre-Install
 ```bash
-sudo npm i -g @angular/cli @nrwl/schematics npx npm-add-dependencies npm-check
+sudo npm i -g @angular/cli @nrwl/nx @nrwl/schematics npx npm-add-dependencies npm-check
 ```
 
 ### 1. Use NX *full-stack* preset
@@ -85,17 +85,30 @@ ng g component todos --project=ui
 ## Compare branches
 `https://github.com/varyanik/angular-full-stack/compare/nx-full-stack-preset...nx-step-by-step`
 
-## Ng commands
+## NG commands
 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
-| ----------------------- | ----------- |
-| `ng serve <ui/api>`     | Run a dev server (for ui at http://localhost:4200/). The app will automatically reload if you change any of the source files. |
-| `ng build <ui/api>`     | Build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. |
-| `ng test <ui/api>`      | Execute the unit tests via [Jest](https://jestjs.io). |
-| `npm run affected:test` | Execute the unit tests affected by a change. |
-| `ng e2e <ui/api>`       | Execute the end-to-end tests via [Cypress](https://www.cypress.io). |
-| `npm run affected:e2e`  | Execute the end-to-end tests affected by a change. |
-| `npm run dep-graph`     | Show a diagram of the dependencies of your projects. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| --- | --- |
+| `ng serve <api/ui>`         | Run a dev server (for ui at http://localhost:4200/). The app will automatically reload if you change any of the source files |
+| `ng build <api/ui/workers>` | Build the project to the `dist/` directory. Use the `--prod` flag for a production build |
+| `ng test <api/ui/workers>`  | Execute the unit tests for the project via [Jest](https://jestjs.io) |
+| `ng e2e <ui-e2e>`           | Execute the end-to-end tests via [Cypress](https://www.cypress.io) |
+| `ng lint <api/ui/workers>`  | Lint the project |
+
+### NPM commands
+
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| --- | --- |
+| `npm run serve`            | Run dev server with default apps and open a new tab in a browser at http://localhost:4200/ |
+| `npm run build`            | Build all apps to the `dist/` directory. Use the `-- --prod` flag for a production build |
+| `npm run test`             | Execute the unit tests |
+| `npm run lint`             | Lint all projects |
+| `npm run e2e`              | Execute the end-to-end tests |
+| `npm run format`           | Overwrite un-formatted files |
+| `npm run dep-list`         | Show a list of all projects |
+| `npm run dep-graph`        | Show a diagram of the dependencies of your projects |
+| `npm run update`           | Update workspace |
+| `npm run help`             | Show help |
 
 ## Licence
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?color=blue&style=flat-square)](http://opensource.org/licenses/MIT)
