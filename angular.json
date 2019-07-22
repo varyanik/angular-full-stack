@@ -172,10 +172,64 @@
         }
       }
     },
+    "workers": {
+      "root": "apps/workers",
+      "sourceRoot": "apps/workers/src",
+      "projectType": "application",
+      "prefix": "workers",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/workers",
+            "main": "apps/workers/src/main.ts",
+            "tsConfig": "apps/workers/tsconfig.app.json",
+            "assets": ["apps/workers/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/workers/src/environments/environment.ts",
+                  "with": "apps/workers/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "workers:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/workers/tsconfig.app.json",
+              "apps/workers/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/workers/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/workers/jest.config.js",
+            "tsConfig": "apps/workers/tsconfig.spec.json"
+          }
+        }
+      }
+    },
     "api-interface": {
+      "projectType": "library",
       "root": "libs/api-interface",
       "sourceRoot": "libs/api-interface/src",
-      "projectType": "library",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
